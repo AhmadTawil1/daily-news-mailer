@@ -15,6 +15,7 @@ venv/
 # === Environment Variables ===
 .env
 .env.*
+! .env.example
 
 # === Logs ===
 *.log
