@@ -8,7 +8,7 @@ def run_daily_job():
     subprocess.run([sys.executable, "main.py"])
 
 # Schedule the job every day at 07:30 AM
-schedule.every().day.at("21:18").do(run_daily_job)
+schedule.every().day.at("07:30").do(run_daily_job)
 
 print("✅ Scheduler started — waiting for 07:30...")
 
