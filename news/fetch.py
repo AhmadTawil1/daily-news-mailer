@@ -8,7 +8,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 API_KEY = NEWS_API_KEY
 
-def fetch_news(query, domains, label, days_back=3):
+def fetch_news(query, domains, label, days_back=1):
     date_from = (datetime.now() - timedelta(days=days_back)).strftime('%Y-%m-%d')
 
     url = 'https://newsapi.org/v2/everything'
